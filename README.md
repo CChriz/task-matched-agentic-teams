@@ -72,3 +72,4 @@ task_team/
     - tasks from categories requiring different patterns
 - In-depth Agent Metrics
 - ...
+- Better pipeline flow

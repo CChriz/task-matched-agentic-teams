@@ -1,0 +1,9 @@
+# dependencies.yaml — Budgeted Workflow Swarm startup check
+
+skills: []
+# Auto-matching: no locally-installed skills match data-file fixing or budget auditing.
+
+tools:
+  - name: python3
+    required: true
+    purpose: "Required to run budgeted_task.py for fixing data files and validate_all.py for verification"

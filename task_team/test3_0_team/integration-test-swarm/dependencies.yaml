@@ -1,0 +1,25 @@
+# dependencies.yaml — Integration Test Swarm startup dependency check
+#
+# Populated from Stage 2 auto-matching results.
+
+skills: []
+# Auto-matching scan: no locally-installed skills are a domain match for
+# API contract analysis, pytest test authoring, or integration test validation.
+# Each role operates on inline-persona instructions only.
+
+tools:
+  - name: python3
+    required: true
+    purpose: "Required for running server.py, executing pytest, and running the broken server for mutation testing"
+
+  - name: pytest
+    required: true
+    purpose: "Test runner — test-author runs to verify tests pass; validator runs independently for audit"
+
+  - name: flask
+    required: true
+    purpose: "Web framework used by server.py and broken_server.py — must be importable to start servers"
+
+  - name: requests
+    required: true
+    purpose: "HTTP client library used by integration tests to call the search service API endpoints"

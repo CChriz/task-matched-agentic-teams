@@ -1,0 +1,9 @@
+# dependencies.yaml — Offline Retrieval Swarm startup check
+
+skills: []
+# Auto-matching: no locally-installed skills match document retrieval with misinformation detection.
+# Each role operates on inline-persona instructions only.
+
+tools: []
+# No external tools required — document reading is a native capability.
+# The offline constraint means no web access tools are needed or permitted.

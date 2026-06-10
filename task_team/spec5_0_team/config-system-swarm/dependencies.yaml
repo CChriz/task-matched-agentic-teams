@@ -1,0 +1,14 @@
+# dependencies.yaml — Swarm Skill startup dependency check
+#
+# Populated from Stage 2 auto-matching results.
+
+skills:
+  # No domain-specific skills matched. All roles operate on LLM-native capabilities:
+  # spec analysis, Python implementation, and test-driven verification.
+  # Auto-matching confirmed no relevant local skills.
+  []
+
+tools:
+  - name: python
+    required: true
+    purpose: "Run config_system.py, execute smoke tests, run the Verifier's test suite, validate JSON parsing"

@@ -1,0 +1,18 @@
+# dependencies.yaml — Swarm Skill startup dependency check
+#
+# Populated from Stage 2 auto-matching results.
+# Both `skills:` and `tools:` segments must be present.
+
+skills:
+  # No domain-specific skills matched. All roles operate on LLM-native capabilities:
+  # document analysis, conflict resolution logic, JSON generation, and rule verification.
+  # Auto-matching confirmed no relevant local skills beyond basic utilities.
+  []
+
+tools:
+  - name: python
+    required: false
+    purpose: "Validate JSON syntax and structural integrity of resolved_config.json — optional; LLM can inspect JSON directly"
+  - name: jq
+    required: false
+    purpose: "Optional JSON key-count and structural verification for the Verifier's structural checks"

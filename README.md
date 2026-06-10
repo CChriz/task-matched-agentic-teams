@@ -19,19 +19,48 @@ The exported tasks are standalone tasks, prepared so they can be run, inspected,
 ```text
 .
 ├── evals/
-│   ├── cross1_0_eval/
-│   ├── crypto6_0_eval/
+|   |
 │   ├── d6_0_eval/
-│   ├── dist1_0_eval/
-│   ├── lh2_0_eval/
-│   ├── p2_0_eval/
-│   ├── spec5_0_eval/
-│   ├── test3_0_eval/
-│   └── trap1_0_eval/
+│   │   └── _eval/
+│   │       ├── grade.sh
+│   │       ├── task.yaml
+│   │       └── task_dir/
+│   └── ...
+|
 ├── task_team/
-│   ├── cross1_0_team/
-│   ├── crypto6_0_team/
+|   |
 │   ├── d6_0_team/
-│   ├── p2_0_team/
-│   └── spec5_0_team/
+│   │   ├── D6_data_reconcile__seed_0/
+│   │   └── data-reconcile-swarm/
+|   |   
+│   ├── cross1_0_team/
+│   │   ├── CROSS1_api_contract_seed_0/
+│   │   └── api-contract-reconcile-swarm/
+|   |
+│   └── ...
 └── README.md
+```
+
+## `task_team/`
+
+The `task_team/` directory contains task-specific team artefacts and generated team workspaces.
+
+Each task family has a `*_team/` directory. Inside that, the standalone exported task and the generated team workspace sit side by side.
+
+Example layout:
+
+```text
+task_team/
+|
+└── d6_0_team/
+    |
+    ├── D6_data_reconcile__seed_0/
+    │   ├── task.yaml
+    │   ├── input files...
+    │   └── expected task workspace...
+    |   
+    └── data-reconcile-swarm/
+        ├── team configuration / agent workspace files...
+        ├── generated outputs...
+        └── evaluation or run artefacts...
+

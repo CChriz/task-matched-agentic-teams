@@ -64,3 +64,11 @@ task_team/
         ├── generated outputs...
         └── evaluation or run artefacts...
 
+```
+**TODOs**
+
+- Evaluation on Eg Tasks - pass?
+- Choose Subset of "top" TNI tasks
+    - tasks from categories requiring different patterns
+- In-depth Agent Metrics
+- ...

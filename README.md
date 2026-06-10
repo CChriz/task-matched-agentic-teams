@@ -65,6 +65,56 @@ task_team/
         └── evaluation or run artefacts...
 
 ```
+
+## Envisioned Pipeline
+
+### Task Extraction & Team Creation
+
+1. **Specify task ID and seed**  
+   Select the task instance to prepare.
+
+2. **Extract as standalone task folder**  
+   Generate / copy the task into a self-contained folder.
+
+3. **Separate visible task files from hidden eval files**  
+   `<standalone_task>/` → `<task_visible>/` + `evals/`
+
+4. **Create a task-specific team**  
+   Pass `TASK.md` and `workspace/` to the team-creator.
+
+5. **Bundle task and team together**  
+   `<task>/` + `<team>.json` → `task_team/`
+
+### Task Execution
+
+1. Start from clean task package
+   `task_team/`
+
+2. Copy into isolated agent workspace
+   `task_team/` → `agent_modified/`
+
+3. Run agent team on `agent_modified/`
+   agents modify files in-place
+
+4. Freeze final workspace
+   no more agent edits
+
+### Evaluation
+
+1. Combine final workspace with hidden evals
+   `agent_modified/` + `evals/` → `combined_grading/`
+
+2. Run grader
+   `combined_grading/grade.sh`
+
+3. Save score + traces
+   `results.json`
+
+4. Separate evaluation script for Collaboration/team metrics on traces
+   `results_extended.json`
+
+---
+
 **TODOs**
 
 - Evaluation on Eg Tasks - pass?
@@ -72,4 +122,4 @@ task_team/
     - tasks from categories requiring different patterns
 - In-depth Agent Metrics
 - ...
-- Better pipeline flow
+- Clean Up Pipeline for batch once working

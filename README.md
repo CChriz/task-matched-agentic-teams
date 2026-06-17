@@ -117,9 +117,5 @@ task_team/
 
 **TODOs**
 
-- Evaluation on Eg Tasks - pass?
-- Choose Subset of "top" TNI tasks
-    - tasks from categories requiring different patterns
-- In-depth Agent Metrics
-- ...
 - Clean Up Pipeline for batch once working
+- metrics

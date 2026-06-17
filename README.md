@@ -7,6 +7,18 @@
 - [ ] Implment variety of Evaluation Metrics for selection
 - [ ] Baseline setup of TeamBench in Jiuwen - 3-role hard separation - fixed team structure
 
+
+**Task Performance Tracker**
+
+| Task ID | Auto-Grader Score | 
+|---|---|
+CROSS1 | 6/10
+P2 | 2/4
+CRYPTO6 | 9/10
+D6 | 18/18
+IR2 | 7/7
+
+
 ---
 
 

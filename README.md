@@ -1,3 +1,15 @@
+# Current Status
+- [x] **Jiuwen - Full Team Stream Capture**: Complete log of per-agent action traces, grouped into discrete turns, record of file content modifications, token usage...
+- [x] **TeamBench Task Extraction**
+- [x] **TeamBench Auto-grader on Team Output**
+
+### TODOs
+- [ ] Implment variety of Evaluation Metrics for selection
+- [ ] Baseline setup of TeamBench in Jiuwen - 3-role hard separation - fixed team structure
+
+---
+
+
 ## Project Components (TBU - current state)
 
 This project is split across 3 related repositories: task extraction, agent-team execution, to grading and future team-behaviour analysis.

@@ -18,6 +18,7 @@ CRYPTO6 | 9/10
 D6 | 18/18
 IR2 | 7/7
 
+(update with single agent / fixed 3 baseline performnance)
 
 ---
 
